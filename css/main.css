@@ -1,0 +1,420 @@
+* {
+    outline: 1px solid --tomato;
+}
+
+body {
+    font-size: inherit;
+    font-family: 'Roboto', 'Noto Sans KR';
+    overflow-x: hidden;
+    color: #000;
+}
+
+p {
+    line-height: 1.3;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Roboto', 'Noto Sans KR';
+}
+
+.inner {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+
+h3 {
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+    margin: 30px 0 40px 0;
+}
+
+.more {
+    display: inline-block;
+
+    font-size: 18px;
+    padding: 10px 20px;
+    background: #000;
+    color: #fff;
+
+    text-align: center;
+}
+
+
+.topBanner {
+    position: fixed;
+    width: 100%;
+    height: 36px;
+    background: #000;
+    color: yellow;
+    position: relative;
+    z-index: 999;
+}
+
+.topBanner.on {
+    height: 0;
+    transition: height 0.5s;
+}
+
+.topBanner a {
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.topBanner i {
+    vertical-align: middle;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    z-index: 999;
+    color: #fff;
+}
+
+
+#header.on {
+
+    background: #ffffffcb;
+    color: #000;
+}
+
+#header h1 img {
+    width: 160px;
+    margin-right: 13px;
+}
+
+#header .hdWap {
+    line-height: 100px;
+    display: flex;
+    transition: 0.5s;
+}
+
+.link {
+    color: #000;
+}
+
+#header .hdWap.on {
+    background: rgba(255, 255, 255, 1);
+    color: #444;
+}
+
+
+#header .hdWap h1 {
+    position: absolute;
+    top: 35px;
+    left: 100px;
+}
+
+#header .hdWap h1 a {
+    display: block;
+    background: url(../img/logo.svg) no-repeat left center;
+    width: 160px;
+    font-size: 0;
+    transition: 0.5s;
+}
+
+#header .hdWap.on h1 a {
+    background: url(../img/logo2.svg) no-repeat left center;
+}
+
+#header .hdWap .gnb {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#header nav>ul {
+    display: flex;
+    gap: 30px;
+    margin-left: 10px;
+}
+
+#header i {
+    font-size: 25px;
+    margin: 0 5px;
+}
+
+#header .gnb {
+    display: flex;
+    justify-content: space-between;
+}
+
+#header .link {
+    margin-right: -150px;
+}
+
+#header .link>ul {
+    display: flex;
+    gap: 15px;
+}
+
+#main {}
+
+
+#mainVisual {
+    position: relative;
+    top: 35px;
+
+}
+
+#mainVisual .itm {
+    position: relative;
+
+    height: calc(100vh - 160px);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#mainVisual .itm01 {
+    background-image: url(../img/main_visual01.jpg);
+}
+
+#mainVisual .itm02 {
+    background-image: url(../img/main_visual02.jpg);
+}
+
+#mainVisual .itm03 {
+    background-image: url(../img/main_visual03.jpg);
+}
+
+#mainVisual .itm04 {
+    background-image: url(../img/main_visual04.jpg);
+}
+
+#mainVisual .itm .slogan {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    text-align: end;
+}
+
+#mainVisual .itm .slogan h2 {
+    color: #000;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1.3;
+    top: 100px;
+    margin: 0 0 10px 0;
+}
+
+#mainVisual .itm .slogan p {
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#mainVisual .itm .slogan a {
+    margin-top: 100px;
+}
+
+#mainVisual .swiper-pagination {
+    padding: 0 250px 20px 0;
+    text-align: end !important;
+}
+
+#mainVisual .swiper-pagination-bullet-active {
+    background-color: #000 !important;
+}
+
+
+#mainVideo {
+    padding: 100px 0;
+    text-align: center;
+}
+
+#mainVideo a {
+    margin-bottom: 50px;
+}
+
+#mainVideo video {
+    width: 1200px;
+    text-align: center;
+}
+
+
+#mainProduct {}
+
+.txt {
+    text-align: end;
+}
+
+.s_more {
+    display: inline-block;
+}
+
+
+#mainProduct .product_list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+}
+
+
+.pro_img_a {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro01-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_a:hover .pro01-1 {
+    display: block;
+}
+
+.pro_img_b {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro02-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_b:hover .pro02-1 {
+    display: block;
+}
+
+.pro_img_c {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro03-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_c:hover .pro03-1 {
+    display: block;
+}
+
+.pro_img_d {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro04-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_d:hover .pro04-1 {
+    display: block;
+}
+
+.pro_img_e {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro05-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_e:hover .pro05-1 {
+    display: block;
+}
+
+.pro_img_f {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro06-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_f:hover .pro06-1 {
+    display: block;
+}
+
+.pro_img_g {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro07-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_g:hover .pro07-1 {
+    display: block;
+}
+
+.pro_img_h {
+    margin: 0 auto;
+    position: relative;
+}
+
+.pro08-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.pro_img_h:hover .pro08-1 {
+    display: block;
+}
+
+#mainProduct .product_list figure {
+    position: relative;
+}
+
+#mainProduct .product_list a {
+    position: absolute;
+    bottom: 18%;
+    right: 5%;
+    background: #fff;
+    padding: 10px;
+    border-radius: 50%;
+
+}
+
+
+#collection {
+    padding: 100px 0;
+}
+
+
+.collection_pro .swiper-wrapper {}
+
+
+/* SUB01 NEW ARRIVAL */
+
+/*그누보드 큐앤에이에서 서브 헤더만 바꾸는 방법 좀 알아봐야함 서브페이지에서는 무조건 온 된상태로요 */
