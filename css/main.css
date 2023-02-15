@@ -158,6 +158,7 @@ h3 {
     gap: 15px;
 }
 
+/* mainVisual slide 시작 */
 #main {}
 
 
@@ -203,7 +204,7 @@ h3 {
 
 #mainVisual .itm .slogan h2 {
     color: #000;
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 700;
     line-height: 1.3;
     top: 100px;
@@ -230,6 +231,8 @@ h3 {
 }
 
 
+/* mainVideo */
+/* 
 #mainVideo {
     padding: 100px 0;
     text-align: center;
@@ -243,20 +246,51 @@ h3 {
     width: 1200px;
     text-align: center;
 }
+ */
 
 
-#mainProduct {}
+
+/* MainProduct SECTION - TRENDING NOW */
+
+#mainProduct {
+    padding: 100px 0;
+}
 
 .txt {
-    text-align: end;
+    text-align: center;
+    line-height: 30px;
 }
+
+.more_view {
+    text-align: end;
+    padding: 50px 0 30px 0;
+}
+
+
+
 
 .s_more {
     display: inline-block;
 }
 
 
-#mainProduct .product_list {
+
+/* 상품 이름 - 가격 - 해시태그 글자 스타일 */
+.ht {
+    padding: 20px 0;
+    font-weight: 500;
+}
+
+.pr {
+    padding-bottom: 10px;
+
+}
+
+.id {
+    color: #444;
+}
+
+.product_list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
@@ -392,13 +426,13 @@ h3 {
     display: block;
 }
 
-#mainProduct .product_list figure {
+.product_list figure {
     position: relative;
 }
 
-#mainProduct .product_list a {
+.product_list a {
     position: absolute;
-    bottom: 18%;
+    bottom: 27%;
     right: 5%;
     background: #fff;
     padding: 10px;
@@ -407,14 +441,199 @@ h3 {
 }
 
 
+
+
+
+
+
+/* COLLECTION - COLLECTION SLIDE */
+
 #collection {
     padding: 100px 0;
+    background: #f2f2f2;
 }
 
 
 .collection_pro .swiper-wrapper {}
 
 
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    color: #000;
+    margin-left: 50px !important;
+}
+
+.collection_pro .swiper-pagination-bullet-active {
+    color: #000 !important;
+}
+
+/* STYLE BOARD SECTION - STYLEBOARD SLIDE */
+
+#styleboard {
+    padding: 100px 0;
+}
+
+
+/* REVIEW SECTION - REVIEW IMAGES */
+#review {
+    padding: 100px 0;
+}
+
+
+/* FOOTER FOOTER FOOTER FOOTER */
+
+#footer {
+    padding: 50px 0 10px 0;
+    background: #000;
+    color: #ddd;
+    font-weight: 300;
+}
+
+#footer .top {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+
+#footer .top .right>ul {
+    display: flex;
+    gap: 30px;
+}
+
+#footer .top .left>ul {
+    display: flex;
+    gap: 30px;
+}
+
+
+#footer .bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .bottom .left {
+    line-height: 24px;
+}
+
+#footer .bottom .left span {
+    font-weight: 500;
+
+}
+
+#footer .bottom .left>ul {
+    padding-bottom: 30px;
+}
+
+#footer .bottom .left .copy {
+    padding-top: 30px;
+    font-size: 14px;
+    color: #999999;
+}
+
+
+#footer .bottom .sns>ul {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+}
+
+
+
+
+/* totop button */
+
+.toTop {
+    position: fixed;
+    display: block;
+
+    bottom: 50px;
+    right: 100px;
+
+
+    width: 40px;
+    height: 40px;
+    padding: 10px 10px;
+    background: #fff;
+    border-radius: 50%;
+    color: #000;
+    text-align: center;
+    vertical-align: middle;
+    z-index: 1000;
+    border: 1px solid #ddd;
+
+    cursor: pointer;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s;
+}
+
+.toTop.on {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+/* 서브페이지 공통 스타일 */
+
+.sub {
+    padding: 50px 0;
+}
+
+.sub h3 {
+    padding: 150px 0 30px 0;
+}
+
+
 /* SUB01 NEW ARRIVAL */
 
-/*그누보드 큐앤에이에서 서브 헤더만 바꾸는 방법 좀 알아봐야함 서브페이지에서는 무조건 온 된상태로요 */
+.sub_banner {
+    margin-top: 150px;
+    max-height: 435px;
+    object-fit: cover;
+
+}
+
+.sub_banner img {
+    width: 100%;
+    max-height: 435px;
+    object-fit: cover;
+}
+
+.sub {}
+
+.sub .shop_cate>ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
+
+
+/* sub04 EVENT LIST */
+
+
+.event_list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+
+}
+
+.review_info {
+    background: url(../img/sub05_intro_bg.png) no-repeat center center/cover;
+    height: 700px;
+    text-align: center;
+    color: #fff;
+}
+
+.review_info p {
+    padding-top: 180px;
+
+    font-size: 40px;
+    font-weight: 500;
+}
